@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0594100-056A-480C-9C3C-E225B15915CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Shopping_Backup</RootNamespace>
+    <AssemblyName>Online Shopping Backup</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Downloads\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="add_admin.aspx" />
+    <Content Include="add_cart.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="CSS\dcmegamenu.css" />
+    <Content Include="CSS\skins\images\arrow.png" />
+    <Content Include="CSS\skins\images\arrow_off.png" />
+    <Content Include="CSS\skins\images\arrow_on.png" />
+    <Content Include="CSS\skins\images\bg_mega_hdr.png" />
+    <Content Include="CSS\skins\images\bg_mega_hdr_full.png" />
+    <Content Include="CSS\skins\images\bg_mega_hdr_on.png" />
+    <Content Include="CSS\skins\images\bg_sub.png" />
+    <Content Include="CSS\skins\images\bg_sub_left.png" />
+    <Content Include="CSS\skins\light_blue.css" />
+    <Content Include="Delete_Product.aspx" />
+    <Content Include="Edit_Product.aspx" />
+    <Content Include="Edit_Profile.aspx" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\Add1.gif" />
+    <Content Include="Images\add_to_cart.png" />
+    <Content Include="js\jquery.dcmegamenu.1.3.3.js" />
+    <Content Include="js\jquery.dcmegamenu.1.3.3.min.js" />
+    <Content Include="js\jquery.hoverIntent.minified.js" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\css_container.css" />
+    <Content Include="CSS\etalage.css" />
+    <Content Include="CSS\magnific-popup.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="CSS\Mobile_description.css" />
+    <Content Include="Images\Admin_task.png" />
+    <Content Include="Images\Cart.png" />
+    <Content Include="Images\place_order.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\Site_name.png" />
+    <Content Include="order_single.aspx" />
+    <Content Include="order_summary.aspx" />
+    <Content Include="Pages\add_source.xml" />
+    <Content Include="Pages\forget_password.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Mobile_description.aspx" />
+    <Content Include="Pages\Product_title.aspx" />
+    <Content Include="Pages\Registration.aspx" />
+    <Content Include="Pages\Search_result.aspx" />
+    <Content Include="Pages\single_page.aspx" />
+    <Content Include="Pages\Thankyou.aspx" />
+    <Content Include="Pages\Thank_you.aspx" />
+    <Content Include="Pages\WebForm1.aspx" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="CSS\Web.config" />
+    <Content Include="Data_Insert.aspx" />
+    <Content Include="Home.Master" />
+    <Content Include="Login.aspx" />
+    <Content Include="Images\Web.config" />
+    <Content Include="Product\Web.config" />
+    <Content Include="Product_Img\Web.config" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Pages\Web.config" />
+    <Content Include="CSS\Home.css" />
+    <Content Include="CSS\Main_Style.css" />
+    <Content Include="CSS\Single_page_Style.css" />
+    <Content Include="Product\dell-inspiron-notebook-125x125-imadhz455huhguxg.jpeg" />
+    <Content Include="Product\dell-inspiron-notebook-125x125-imadzytzdxdtzyq7.jpeg" />
+    <Content Include="Product\dell-inspiron-notebook-125x125-imadzytzjqtmhgqr.jpeg" />
+    <Content Include="Product\hp-notebook-15-s003tu-125x125-imaeyf6e5cgmhn9r.jpeg" />
+    <Content Include="Product\mi-mi-redmi-1s-2013029-125x125-imadz99z2hgshk3e.jpeg" />
+    <Content Include="Product\micromax-unite-2-a106-8-gb-rom-125x125-imadxvuvrswyymzj.jpeg" />
+    <Content Include="Product\motorola-xt1022-125x125-imadvvfknshcywk5.jpeg" />
+    <Content Include="Product\samsung-note-4-sm-n910gzweins-125x125-imaeyg83f5vgtybg.jpeg" />
+    <Content Include="Product\samsung-notebook-125x125-imadjbjvqzrwfbzd.jpeg" />
+    <Content Include="Product\sony-xperia-z3-125x125-imaey8gbpjpznxu3.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadhz455huhguxg.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadhz45udhbss8e.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadhz45zybvqkgb.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadhz45zyuurzte.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadzytzdxdtzyq7.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadzytzjqtmhgqr.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadzytzuur3j8x8.jpeg" />
+    <Content Include="Product_Img\dell-inspiron-notebook-400x400-imadzytzyvd4hjbj.jpeg" />
+    <Content Include="Product_Img\hp-compaq-notebook-400x400-imaeyf6egg58p3mh.jpeg" />
+    <Content Include="Product_Img\hp-notebook-15-s003tu-400x400-imaeyf6e5cgmhn9r.jpeg" />
+    <Content Include="Product_Img\hp-notebook-15-s003tu-400x400-imaeyf6er8zajmmc.jpeg" />
+    <Content Include="Product_Img\hp-notebook-15-s003tu-400x400-imaeyf6pnwrwyyr8.jpeg" />
+    <Content Include="Product_Img\mi-mi-redmi-1s-2013029-400x400-imadz7skhzg83qsh.jpeg" />
+    <Content Include="Product_Img\mi-mi-redmi-1s-2013029-400x400-imadz7sksmrgcsmz.jpeg" />
+    <Content Include="Product_Img\mi-mi-redmi-1s-2013029-400x400-imadz7skzqhq6qjz.jpeg" />
+    <Content Include="Product_Img\mi-mi-redmi-1s-2013029-400x400-imadz99z2hgshk3e.jpeg" />
+    <Content Include="Product_Img\micromax-unite-2-a106-400x400-imadwf3qb5eb3whg.jpeg" />
+    <Content Include="Product_Img\micromax-unite-2-a106-400x400-imadwf3qczrzntmf.jpeg" />
+    <Content Include="Product_Img\micromax-unite-2-a106-400x400-imadwf3qp5c5vjhc.jpeg" />
+    <Content Include="Product_Img\micromax-unite-2-a106-400x400-imadwf3qsz2uzh3a.jpeg" />
+    <Content Include="Product_Img\motorola-xt1022-400x400-imadvvfkg9f2ggrg.jpeg" />
+    <Content Include="Product_Img\motorola-xt1022-400x400-imadvvfknshcywk5.jpeg" />
+    <Content Include="Product_Img\motorola-xt1022-400x400-imadvvfkrczftqfs.jpeg" />
+    <Content Include="Product_Img\motorola-xt1022-400x400-imadvvfkshrfjcfj.jpeg" />
+    <Content Include="Product_Img\samsung-note-4-sm-n910gzweins-400x400-imaeyg83f5vgtybg.jpeg" />
+    <Content Include="Product_Img\samsung-note-4-sm-n910gzweins-400x400-imaeyg83gwgzj8cn.jpeg" />
+    <Content Include="Product_Img\samsung-note-4-sm-n910gzweins-400x400-imaeyg83yztt9mgc.jpeg" />
+    <Content Include="Product_Img\samsung-notebook-400x400-imadjbjvgshxfw4f.jpeg" />
+    <Content Include="Product_Img\samsung-notebook-400x400-imadjbjvj8swtzgh.jpeg" />
+    <Content Include="Product_Img\samsung-notebook-400x400-imadjbjvkhsafykb.jpeg" />
+    <Content Include="Product_Img\samsung-notebook-400x400-imadjbjvqzrwfbzd.jpeg" />
+    <Content Include="Product_Img\sony-xperia-z3-compact-400x400-imaey8gdatbpgsky.jpeg" />
+    <Content Include="Product_Img\sony-xperia-z3-compact-400x400-imaey8gdjkfetyqn.jpeg" />
+    <Content Include="Product_Img\sony-xperia-z3-compact-400x400-imaey8gdpdhwngva.jpeg" />
+    <Content Include="Product_Img\sony-xperia-z3-compact-400x400-imaey8gdtpqnghpd.jpeg" />
+    <Content Include="Product_Img\sony-xperia-z3-compact-400x400-imaey8gdtyhtxkmh.jpeg" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.etalage.min.js" />
+    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.magnific-popup.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jssor.js" />
+    <Content Include="Scripts\jssor.slider.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="View_Order.aspx" />
+    <Content Include="View_user_Database.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_admin.aspx.cs">
+      <DependentUpon>add_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_admin.aspx.designer.cs">
+      <DependentUpon>add_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_cart.aspx.cs">
+      <DependentUpon>add_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_cart.aspx.designer.cs">
+      <DependentUpon>add_cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Data_Insert.aspx.cs">
+      <DependentUpon>Data_Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data_Insert.aspx.designer.cs">
+      <DependentUpon>Data_Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Product.aspx.cs">
+      <DependentUpon>Delete_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete_Product.aspx.designer.cs">
+      <DependentUpon>Delete_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Product.aspx.cs">
+      <DependentUpon>Edit_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Product.aspx.designer.cs">
+      <DependentUpon>Edit_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Profile.aspx.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Profile.aspx.designer.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_single.aspx.cs">
+      <DependentUpon>order_single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_single.aspx.designer.cs">
+      <DependentUpon>order_single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_summary.aspx.cs">
+      <DependentUpon>order_summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_summary.aspx.designer.cs">
+      <DependentUpon>order_summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\forget_password.aspx.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\forget_password.aspx.designer.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Mobile_description.aspx.cs">
+      <DependentUpon>Mobile_description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mobile_description.aspx.designer.cs">
+      <DependentUpon>Mobile_description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Product_title.aspx.cs">
+      <DependentUpon>Product_title.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Product_title.aspx.designer.cs">
+      <DependentUpon>Product_title.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search_result.aspx.cs">
+      <DependentUpon>Search_result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Search_result.aspx.designer.cs">
+      <DependentUpon>Search_result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\single_page.aspx.cs">
+      <DependentUpon>single_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\single_page.aspx.designer.cs">
+      <DependentUpon>single_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Thankyou.aspx.cs">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Thankyou.aspx.designer.cs">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Thank_you.aspx.cs">
+      <DependentUpon>Thank_you.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Thank_you.aspx.designer.cs">
+      <DependentUpon>Thank_you.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="View_Order.aspx.cs">
+      <DependentUpon>View_Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Order.aspx.designer.cs">
+      <DependentUpon>View_Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_user_Database.aspx.cs">
+      <DependentUpon>View_user_Database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_user_Database.aspx.designer.cs">
+      <DependentUpon>View_user_Database.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="js\Web.config" />
+    <Content Include="CSS\skins\images\Web.config" />
+    <Content Include="CSS\skins\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50604</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

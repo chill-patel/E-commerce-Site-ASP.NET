@@ -1,0 +1,49 @@
+﻿body {
+}
+
+section {
+    height: auto;
+    width: 100%;
+    background-color: #f8f5ee;
+    margin: 0px 0px 0px 300px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   
+}
+
+#slider {
+    height: 260px;
+    width: 524px;
+    background-color: #ffd4a5;
+    
+}
+
+#deal_of_day {
+    height: 200px;
+    width: auto;
+    background-color: #ffffff;
+}
+
+#deal_name {
+    height: 50px;
+    width: auto;
+    background-color: #3f3f3f;
+}
+
+
+
+#electronic_section {
+    height: 200px;
+    width: auto;
+    background-color: #176fb7;
+}
+
+#advertising {
+    height: 600px;
+    width: 20%;
+    background-color: #ff9b28;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

@@ -1,0 +1,159 @@
+﻿body {
+    margin: 0px auto auto auto;
+    padding: 0px;
+    background-color:#f7f5ee;
+}
+
+#main {
+    height: auto;
+    width: 70%;
+    position: absolute;
+    
+    left:auto;
+    top:148px ;
+}
+
+
+
+#navigation {
+    /*height: 48px;*/
+    height:auto;
+    width: 100%;
+    background-color: #0a3152;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+
+
+#top_navigation {
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+/*This is Header section Don't Touchimg_home_button*/
+
+header {
+    width: 100%;
+    background-color: #005387;
+     
+    position: relative;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+
+
+#top_list ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+    #top_list ul li {
+        float: right;
+        display: block;
+        color: white;
+        padding: 0px 10px;
+        margin:0px;
+        list-style-type: none;
+        width: auto;
+}
+
+      #top_list li a { 
+        color: white;
+       text-decoration: none;
+}
+
+#header_main {
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#top_list {
+    height: auto;
+    width: auto;
+   
+}
+
+#top_search {
+    height: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+   
+  
+}
+
+.txt_main_search {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+}
+
+.img_button_search {
+    position: absolute;
+    top: 40px;
+    left: 975px;
+}
+
+/*This is Header section Complete*/
+
+
+#home_div_container {
+    height: auto;
+    width: 70%;
+    padding: 0px;
+    position: absolute;
+    margin:0px auto;
+    top: 0px;
+    left: 0px;
+    background-color:white;
+}
+#top_search {
+
+    height:auto;
+    width:100%;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+#top_search ul {
+    margin:0px;
+    padding:0px;
+    width: 1000px;
+}
+
+    #top_search ul li {
+        float:left;
+        display: block;
+        color: white;
+       
+        list-style-type: none;
+    }
+
+#btn_add_cart {
+    height:30px;
+    width:30px;
+    position:absolute;
+   top:auto;
+   left:1000px;
+  padding-left:100px;
+}
+
+.img_home_button {
+    padding:0px 100px 0px 50px;
+   
+   
+}

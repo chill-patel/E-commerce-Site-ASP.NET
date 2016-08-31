@@ -1,0 +1,85 @@
+﻿body {
+}
+
+#image_area {
+    height: auto;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+#main_cointer {
+    height: auto;
+    width: 80%;
+    margin: 0px 200px;
+       display: inline;
+}
+
+
+
+.product_name {
+    height: auto;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.price {
+    height: 50px;
+   width: 50px;
+    font-size: 20px;
+}
+
+#rs {
+       height: 130px;
+    width: 130px;
+    font-size: 20px;
+}
+
+.brand {
+        height: auto;
+    width: 150px;
+    font-size: 17px;
+
+}
+#brand_name{
+        height: auto;
+    width: 150px;
+    font-size: 17px;
+    font-weight:bold
+
+}
+
+.description {
+    height: auto;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+#buy_now_css ul {
+    margin:0px;
+    padding:0px;
+
+}
+
+#buy_now_css ul li {
+       list-style-type:none;
+        list-style:none;
+        padding-bottom:10px; 
+
+    }
+
+
+
+#product_name_width {
+    width:400px;
+}
+
+#Description_width {
+    width:100%;
+}

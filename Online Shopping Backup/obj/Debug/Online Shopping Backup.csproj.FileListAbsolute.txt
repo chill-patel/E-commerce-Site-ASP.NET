@@ -1,0 +1,48 @@
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\Online Shopping Backup.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\Online Shopping Backup.pdb
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.Core.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\EntityFramework.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\System.Web.Providers.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\EntityFramework.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.Core.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\obj\Debug\Online Shopping Backup.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\obj\Debug\Online Shopping Backup.pdb
+C:\Users\Sunil\documents\visual studio 2012\Projects\Online Shopping Backup\Online Shopping Backup\obj\Debug\Online Shopping Backup.csprojResolveAssemblyReference.cache
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\Online Shopping Backup.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\Online Shopping Backup.pdb
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.Core.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\EntityFramework.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\System.Web.Providers.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\EntityFramework.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.Core.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\obj\Debug\Online Shopping Backup.csprojResolveAssemblyReference.cache
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\obj\Debug\Online Shopping Backup.dll
+C:\Users\Sunil\Documents\Visual Studio 2012\Projects\Online Shopping App\Online Shopping Backup\obj\Debug\Online Shopping Backup.pdb

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/Add1.gif</ImageUrl>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <AlternateText>Advertisement</AlternateText>
+    <Impressions>1</Impressions>
+    <Keyword>Header</Keyword>
+    <Category>Script</Category>
+  </Ad>
+
+
+</Advertisements>

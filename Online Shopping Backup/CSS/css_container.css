@@ -1,0 +1,19 @@
+﻿
+#product_name {
+    height: auto;
+    width: 150px;
+    font-size: 17px;
+    color:#4f4bac;
+}
+
+#price {
+        padding:5px 0px 0px 0px;
+    height: 47px;
+    width: 147px;
+    border-top: 2px solid #c9c9c9;
+    border-bottom: 2px solid #c9c9c9;
+   
+    color:#333333;
+
+}
+
